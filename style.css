@@ -1,0 +1,299 @@
+
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+ .header{
+   background-image: url(../Proyecto2/Imagenes/cafe.jpeg);
+   width: 100%;
+   height: 400%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: relative;
+   overflow: hidden;
+
+}
+
+nav{
+   text-align: right;
+   padding: 30px 50px 0 0;
+}
+
+nav a{
+   text-decoration: none;
+   font-weight: 600;
+   color: white;
+   text-shadow: 1px 1px 5px black;
+   font-size: 20px;
+   margin-right: 20px;
+
+}
+
+
+.logo{
+   width: 200px;
+   
+}
+
+.svg-header{
+  position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+}
+
+.textos-header{
+   display: flex;
+   flex-direction: column;
+   height: 500px;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .textos-header img{
+   width: 100px;
+   margin-bottom: 25px;
+ }
+
+ .textos-header h1{
+   font-size: 60px;
+   text-shadow: 1px 1px 5px;
+   font-weight: 400;
+ }
+
+ 
+ .textos-header p{
+   font-size: 30px;
+   font-weight: 200;
+   margin-bottom: 50px;
+ }
+
+ .textos-header p{
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: 700;
+  color: black;
+  
+ }
+
+ .textos-header a{
+
+  background-color: black;
+  font-size: 20px;
+  color: brown;
+  font-weight: 700;
+  border-radius: 20px;
+
+}
+
+
+
+/*main*/
+
+.contenedor{
+  padding: 60px 30px;
+  width: 50%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+/*nosotros*/
+
+.titulo{
+  color: saddlebrown;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main .sobre-nosotros{
+  padding: 10px 0 10px 0;
+}
+
+.contenido-sobre-nosotros{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagen-nosotros{
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-right: 30px;
+}
+
+.contenido-textos{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido-textos h3{
+  margin-bottom: 20px;
+}
+
+.contenido-textos p{
+  padding: 0 0 30px 20px;
+}
+
+.contenido-textos h3 span{
+  background-color: chocolate;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+/*galeria*/
+
+.galeria{
+  background-color: beige;
+  
+}
+
+.galeria-contenedor{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.galeria-imagen{
+  width: 30%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.galeria-imagen img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hover-galeria{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color:rgba(222, 184, 135, 0.733);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.hover-galeria img{
+  width: 50px;
+  height: 100px;
+}
+
+.hover-galeria p{
+ color: azure;
+ font-size: 20px;
+ font-weight: 700;
+}
+
+.galeria-imagen:hover .hover-galeria{
+  transform: scale(1);
+  
+}
+
+
+/*contacto*/
+
+.contacto{
+  background-color:rgb(252, 223, 171);
+ }
+
+.t2{
+  color:saddlebrown;
+ }
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+.input{
+  background: transparent;
+  border: 0;
+  color: chocolate;
+  border: 1px solid black;
+  padding: 20px 10px;
+
+ }
+
+.input::placeholder{
+ color: chocolate;
+}
+
+
+input[type= 'text'],
+input[type= 'email'] {
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+.form textarea{
+width: 100%;
+margin-bottom: 20px;
+}
+
+
+input[type="submit"] {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+}
+
+input[type="submit"]:hover{
+  cursor: pointer;
+  color: rgba(0, 255, 255, 0.445);
+  background-color: brown; 
+}
+
+
+/*footer*/
+
+footer{
+  background-color: rgb(214, 204, 191);
+  padding: 60px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer{
+  display:flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  border-bottom: 1px solid chocolate;
+}
+
+.content-foot img{
+  width: 50px;
+  margin-left: 20px;
+}
+
+.titulo-final{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
